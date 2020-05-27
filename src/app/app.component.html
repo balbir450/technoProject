@@ -1,0 +1,46 @@
+
+  <div class ="bgimg">
+    
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container">
+      <!-- Brand/logo -->
+      <a class="navbar-brand text-warning font-weight-bold" href="#">Techno Plast</a>
+      
+      <!-- Links -->
+       <button class="navbar toggler" type="button" data toggle="collapse" data-target="#collapsenavbar">
+         <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse text=center" id="collapsenavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+          <a href="" class="nav-link text-white"  routerLink="/home" routerLinkActive="active">   Home   </a></li>
+          <li class="nav-item">
+          <a href="" class="nav-link text-white" routerLink="/service" routerLinkActive="active">   Service  </a></li>
+          <li class="nav-item">
+          <a href="" class="nav-link text-white" routerLink="/contact" routerLinkActive="active">   Contact   </a></li>
+          
+          <li class="nav-item">
+           <a href="" class="nav-link text-white" routerLink="/aboutus" routerLinkActive="active">   About Us   </a></li>
+        
+        </ul>
+        </div>
+      </div>
+      </nav>
+      <div class="container text-center headerset">
+        <h1>Welcome To Techno Plast </h1>
+        <h2>IT's NICE TO MEET YOU</h2>
+        <button class="btn btn-warning text-white btn-lg ">Subscribe</button>
+      </div>
+    
+      <section class="main-page">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <router-outlet></router-outlet>
+            </div>
+          </div>
+        </div>
+        </section>
+    
+       
+  </div>

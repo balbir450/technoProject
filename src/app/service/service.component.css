@@ -1,0 +1,32 @@
+.hello{
+    font-size:60px;
+    font-style: italic;
+}
+
+.rowsetting{
+    margin:80px 0px !important;
+}
+.imgsetting{
+    border-radius:60%;
+    height:100px;
+    width: 100px;
+}
+
+.fa-clipboard{
+    margin-top: 20px;
+}
+.fa-truck{
+    margin-top: 20px;
+}
+.fa-comments-dollar{
+    margin-top: 20px;
+}
+.fa-transgender {
+    margin-top: 20px;
+}
+.nav-link
+{
+    font-size:20px;
+    font-style: oblique;
+    
+}

@@ -1,0 +1,58 @@
+
+
+	
+ <h1 class="hello">Thank You For Visiting</h1>
+<div class="signup-form">
+   
+  <form #userForm="ngForm">
+
+		<h2>Sign Up</h2>
+		<p>Please fill in this form to create an account!</p>
+		<hr>
+        <div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-user"></i></span>
+				<input type="text" #username="ngModel"  class="form-control" [(ngModel)]="userModule.username" name="username" placeholder="Username" required="required">
+            </div>
+            <small class="text-danger" [class.d-none]="username.valid ||username.untouched">Name is required</small>
+        </div>
+        <div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-paper-plane"></i></span>
+				<input type="email" #email="ngModel" class="form-control" [(ngModel)]="userModule.email" name="email" placeholder="Email Address" required="required">
+            </div>
+            <small class="text-danger" [class.d-none]="email.valid ||email.untouched">Email is required</small>
+        </div>
+		<div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+				
+				<input type="password" class="form-control" [(ngModel)]="userModule.password" name="password" placeholder="Password" required="required" #password="ngModel" validateEqual="checkpass" reverse="true">
+			   <small [hidden]="password.valid || (password.pristine && !userForm.submitted)"> Password is required </small>
+			
+			
+			</div>
+        </div>
+		<div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon">
+					<i class="fa fa-lock"></i>
+					<i class="fa fa-check"></i>
+				</span>
+				<input type="password" class="form-control"  [(ngModel)]="userModule.checkpass" name="checkpass" placeholder="Confirm Password" required="required" validateEqual="password" #checkpass="ngModel" >
+			
+				<small [hidden]="checkpass.valid || (checkpass.pristine && !userForm.submitted)"> Password mismatch </small>
+			
+			</div>
+        </div>
+        <div class="form-group">
+			<label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+		</div>
+		<div class="form-group">
+            <button type="submit" class="btn btn-primary btn-lg">Sign Up</button>
+        </div>
+    </form>
+	
+</div>
+
+                           
